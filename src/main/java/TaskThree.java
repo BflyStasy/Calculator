@@ -69,7 +69,7 @@ public class TaskThree {
         int size = scanner.nextInt();
 
         String arr[] = new String[size];
-        
+
         System.out.printf("Enter %d words.\n", size);
         int lengthWord = 0;
         int number = 0;

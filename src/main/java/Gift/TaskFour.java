@@ -1,3 +1,5 @@
+package Gift;
+
 import java.util.Scanner;
 
 /**
@@ -32,7 +34,7 @@ public class TaskFour {
         }
         double min = 10.0;
         double max = -10.0;
-        int indexMin=0, indexMax=0;
+        int indexMin = 0, indexMax = 0;
         for (int i = 0; i < 20; i++) {
             if (arr[i] > max) {
                 max = arr[i];
@@ -54,8 +56,14 @@ public class TaskFour {
 
     }
 
-    public static void createGift(){
+    public static void createGift() {
+        Sweet Candy = new Sweet("Candy", 0.58, 23.5, 1);
+        Sweet Jellybean = new Sweet("Jellybean", 1.45, 45.7, 8);
+        Sweet MM = new Sweet("M&M", 2.47, 60.0, 17);
+        Sweet[] sweets = new Sweet[]{Candy, Jellybean, MM};
+
         Gift myGift = new Gift();
+        myGift.addSweetsToGift(sweets);
         myGift.printInformationAboutGift();
     }
 
